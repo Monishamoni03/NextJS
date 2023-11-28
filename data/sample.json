@@ -1,0 +1,16 @@
+{
+  "tickets": [
+    {
+      "id": "1",
+      "text": "Verify that user able to edit the address and mobile no. field in my profile page."
+    },
+    {
+      "id": "2",
+      "text": "Verify that tick mark is shown if pan no. status is verified in edit personal details page."
+    },
+    {
+      "id": "3",
+      "text": "Verify that user able to view personal details page."
+    }
+  ]
+}
