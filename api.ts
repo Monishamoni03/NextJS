@@ -12,15 +12,12 @@ export const getTicketById = async (id: any) => {
   try {
     const res = await fetch(`${baseUrl}/tickets/${id}`, { cache: "no-store" });
     const ticket = await res.json();
-    console.log('heyheyhey', ticket);
-    
-    
     return ticket;
   } catch (error) {
     console.error(`Error fetching ticket with ID ${id}:`, error);
     throw new Error(`Failed to fetch ticket with ID ${id}`);
   }
-}
+};
 
 export async function getServerSideProps({ params }: any) {
   const { id } = params;
